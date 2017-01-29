@@ -3,8 +3,6 @@ import harvester from './roles/harvester';
 import game from './control/game';
 
 module.exports.loop = function(){
-    Memory = JSON.parse(RawMemory.get());
-
     Object.keys(Memory.creeps).forEach((name) => {
         if(!Game.creeps[name]) {
             delete Memory.creeps[name];
@@ -27,6 +25,4 @@ module.exports.loop = function(){
             harvester.run(creep);
         }
     });
-
-    RawMemory.set(JSON.stringify(Memory));
 };
