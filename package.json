@@ -1,0 +1,42 @@
+{
+  "name": "screeps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.19.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-plugin-transform-es2015-parameters": "^6.18.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-exponentiation-operator": "^6.8.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "broccoli": "^1.1.0",
+    "broccoli-cli": "^1.0.0",
+    "broccoli-rollup": "^1.0.3",
+    "foreman": "^2.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-screeps": "^1.2.1",
+    "grunt-shell": "^2.1.0",
+    "lodash": "^4.17.4",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "build:broccoli": "broccoli build dist",
+    "deploy": "nf run grunt deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickschot/screeps.git"
+  },
+  "author": "Nick Schot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickschot/screeps/issues"
+  },
+  "homepage": "https://github.com/nickschot/screeps#readme"
+}
